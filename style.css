@@ -1,7 +1,63 @@
-html {
-  background: black;
+:root {
+  --background-color: #171717;
+  --toum-color: #f7f7d7;
+  --footer-height: 2.5rem;
+  --header-height: 100px;
 }
 
-h1 {
-  color: lightyellow;
+main {
+  /*
+font-size: 4rem;
+  */
+  font-size: 1rem;
+}
+
+hr {
+  color: var(--toum-color);
+}
+
+html {
+  background: var(--background-color);
+  color: var(--toum-color);
+}
+
+body {
+  /* for footer */
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+header > a > img {
+  width:  var(--header-height);
+  height: var(--header-height);
+}
+
+#header-text {
+  height: var(--header-height);
+  margin-left: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#header-text h1, #header-text h2 {
+  margin: auto;
+}
+
+#page {
+  padding-bottom: var(--footer-height); /* get space for footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: var(--footer-height);
+
+  text-align: center;
+  font-size: 0.75em;
 }
