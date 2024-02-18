@@ -1,24 +1,16 @@
 :root {
-  --background-color: #171717;
-  --toum-color: #f7f7d7;
+  --dark-color-0: #171717;
+  --dark-color-1: #272727;
+  --dark-color-2: #373737;
+  --off-color: #f7f7b7;
+  --light-color-0: #e7e7e7;
   --footer-height: 2.5rem;
   --header-height: 100px;
 }
 
-main {
-  /*
-font-size: 4rem;
-  */
-  font-size: 1rem;
-}
-
-hr {
-  color: var(--toum-color);
-}
-
 html {
-  background: var(--background-color);
-  color: var(--toum-color);
+  background: var(--dark-color-0);
+  color: var(--light-color-0);
 }
 
 body {
@@ -30,6 +22,20 @@ body {
 header {
   display: flex;
   padding-bottom: 2rem;
+  color: var(--off-color);
+}
+
+header hr {
+  color: var(--off-color);
+}
+
+header a {
+  color: var(--off-color);
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 header > a > img {
@@ -50,6 +56,82 @@ header > a > img {
 
 #page {
   padding-bottom: var(--footer-height); /* get space for footer */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table#repo-list {
+  width: 100%;
+}
+
+thead {
+  font-weight: bold;
+  background-color: var(--dark-color-2);
+}
+
+table, th, td {
+  padding: 5px;
+  border: solid 1px;
+  color: var(--light-color-0);
+}
+tr:nth-child(even) {
+  background-color: var(--dark-color-1);
+}
+
+tr:hover {
+  background-color: var(--dark-color-2);
+}
+
+main a, footer a {
+  color: var(--light-color-0);
+  text-decoration: none;
+}
+
+main a:hover, footer a:hover {
+  color: var(--off-color);
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul + hr {
+  margin: 0px;
+  color: var(--dark-color-1);
+  border-top: 3px solid;
+}
+
+li {
+  padding:  5px;
+  padding-left:  15px;
+  padding-right: 15px;
+}
+
+li#current-page {
+  background-color: var(--dark-color-1);
+}
+
+li:hover {
+  background-color: var(--dark-color-2);
+}
+
+pre#readme {
+  background-color: var(--dark-color-1);
+
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+table#clone, pre#readme {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
