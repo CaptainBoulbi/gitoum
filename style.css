@@ -191,6 +191,11 @@ table#log th {
   min-width: 69px;
 }
 
+span.branch {
+  border: solid 1px var(--off-color);
+  padding: 1px;
+}
+
 footer {
   position: absolute;
   bottom: 0;
