@@ -68,6 +68,7 @@ table td, table th {
 table thead {
   font-weight: bold;
   background-color: var(--dark-color-2);
+  color: var(--off-color);
 }
 
 table tr:nth-child(even) {
