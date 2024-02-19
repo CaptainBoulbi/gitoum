@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>GITOUM</title>
+    <title>Gitoum</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/style.css" rel="stylesheet">
+    <link href="color.css" rel="stylesheet">
   </head>
   <body>
 
     <div id="page">
       <header>
-        <a href="/"><img src="/img/logo.webp" alt="logo" /></a>
+        <a href="."><img src="logo.webp" alt="logo" /></a>
         <div id="header-text">
-          <h1><a href="index.html">Gitoum</a></h1>
+          <h1><a href="/">Repo</a> : <a href=".">Gitoum</a></h1>
           <hr />
           <h2>Git frontend</h2>
         </div>
       </header>
 
       <main>
-        <ul>
-          <a href="index.html"><li id="current-page">about</li></a>
+        <ul id="repo-menu">
+          <a href="."><li id="current-page">about</li></a>
           <a href="code.html"><li>code</li></a>
-          <a href="log.html"><li>log</li></a>
           <a href="summary.html"><li>summary</li></a>
+          <a href="log.html"><li>log</li></a>
           <a href="stats.html"><li>stats</li></a>
           <a href="wiki.html"><li>wiki</li></a>
           <a href="pakages.html"><li>pakages</li></a>
         </ul>
         <hr />
-
         <br />
 
+        <div id="about-content">
         <table id="clone">
           <thead>
             <tr><th colspan="2">Clone</th></tr>
@@ -66,6 +67,8 @@ yes.
 ```console
 $ make bootstrap
 ```</pre>
+          <div id="nothing" />
+        </div>
       </main>
     </div>
 

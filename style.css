@@ -1,9 +1,4 @@
 :root {
-  --dark-color-0: #171717;
-  --dark-color-1: #272727;
-  --dark-color-2: #373737;
-  --off-color: #f7f7b7;
-  --light-color-0: #e7e7e7;
   --footer-height: 2.5rem;
   --header-height: 100px;
 }
@@ -21,7 +16,7 @@ body {
 
 header {
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   color: var(--off-color);
 }
 
@@ -60,28 +55,35 @@ header > a > img {
 
 table {
   border-collapse: collapse;
+
+  padding: 5px;
+  border: solid 3px var(--dark-color-2);
+}
+
+table td, table th {
+  border-right: solid 3px var(--dark-color-2);
+  padding: 4px;
+}
+
+table thead {
+  font-weight: bold;
+  background-color: var(--dark-color-2);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--dark-color-1);
+}
+
+table tr:hover {
+  background-color: var(--dark-color-2);
 }
 
 table#repo-list {
   width: 100%;
 }
 
-thead {
-  font-weight: bold;
-  background-color: var(--dark-color-2);
-}
-
-table, th, td {
-  padding: 5px;
-  border: solid 1px;
-  color: var(--light-color-0);
-}
-tr:nth-child(even) {
-  background-color: var(--dark-color-1);
-}
-
-tr:hover {
-  background-color: var(--dark-color-2);
+table#repo-list thead {
+  text-align: left;
 }
 
 main a, footer a {
@@ -94,44 +96,82 @@ main a:hover, footer a:hover {
   text-decoration: underline;
 }
 
-ul {
+ul#repo-menu {
   display: flex;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
 }
 
-ul + hr {
+ul#repo-menu + hr {
   margin: 0px;
   color: var(--dark-color-1);
   border-top: 3px solid;
 }
 
-li {
+ul#repo-menu li {
   padding:  5px;
   padding-left:  15px;
   padding-right: 15px;
 }
 
-li#current-page {
+ul#repo-menu li#current-page {
   background-color: var(--dark-color-1);
 }
 
-li:hover {
+ul#repo-menu li:hover {
   background-color: var(--dark-color-2);
 }
 
 pre#readme {
   background-color: var(--dark-color-1);
+  white-space: pre-wrap;
 
   padding: 10px;
-  white-space: pre-wrap;
+  margin: 0px;
 }
 
-table#clone, pre#readme {
-  max-width: 750px;
+div#about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table#clone {
+  min-width: 25%;
+}
+
+pre#readme {
+  min-width: 50%;
+}
+
+div#about-content div#nothing {
+  min-width: 25%;
+}
+
+table#clone, pre#readme, div#about-content div#nothing {
+  margin-left:  1%;
+  margin-right: 1%;
+}
+
+table#clone {
+  height: 100px;
+}
+
+table#clone tbody th {
+  text-align: left;
+}
+
+table#file-tree {
+  width: 600px;
+
   margin-left: auto;
   margin-right: auto;
+
+  flex-wrap: nowrap;
+}
+
+table#file-tree td {
+  padding: 7px;
 }
 
 footer {
