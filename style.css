@@ -136,6 +136,10 @@ div#about-content {
   flex-wrap: wrap;
 }
 
+p#about-desc {
+  margin-left: 2%;
+}
+
 table#clone {
   min-width: 25%;
 }
