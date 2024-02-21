@@ -185,9 +185,13 @@ table#summary-branch, table#summary-tag, table#log, table#packages {
 table#summary-branch th, table#summary-tag th, table#packages th {
   width: 10%;
 }
-
-table#summary-branch td, table#summary-tag td, table#log td, table#packages td {
+ 
+table#summary-branch td, table#summary-tag td, table#packages td {
   width: 100%;
+}
+
+table#log tbody tr td:first-of-type {
+  width: 69%;
 }
 
 table#log th {
