@@ -189,6 +189,10 @@ table#log tbody tr td:first-of-type {
   width: 69%;
 }
 
+table#log tbody tr td:last-of-type {
+  min-width: 100px;
+}
+
 table#log th {
   text-align: left;
   min-width: 69px;
