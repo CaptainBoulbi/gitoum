@@ -137,29 +137,28 @@ div#about-content {
   flex-wrap: wrap;
 }
 
-p#about-desc {
-  margin-left: 2%;
-}
-
-table#clone {
-  min-width: 25%;
+div#about-side {
+  max-width: 480px;
 }
 
 pre#readme {
-  min-width: 50%;
+  min-width: 480px;
+  max-width: 960px;
+  font-size: 1rem;
 }
 
-div#about-content div#nothing {
-  min-width: 25%;
+div#about-side, pre#readme {
+  margin: 10px;
+  flex: 1;
 }
 
-table#clone, pre#readme, div#about-content div#nothing {
-  margin-left:  1%;
-  margin-right: 1%;
+div#about-desc {
 }
 
 table#clone {
   height: 100px;
+  float: left;
+  margin-bottom: 1rem;
 }
 
 table#clone tbody th {
