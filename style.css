@@ -152,9 +152,6 @@ div#about-side, pre#readme {
   flex: 1;
 }
 
-div#about-desc {
-}
-
 table#clone {
   height: 100px;
   float: left;
@@ -170,8 +167,6 @@ table#file-tree {
 
   margin-left:  16%;
   margin-right: 15%;
-
-  flex-wrap: nowrap;
 }
 
 table#file-tree td {
@@ -226,6 +221,33 @@ table#author-stat, table#month-stat {
   margin-bottom: 1.5rem;
 
   height: 0px;
+}
+
+
+div#wiki-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div#wiki-side {
+  max-width: 300px;
+  height: 0%;
+
+  background-color: var(--dark-color-1);
+}
+
+pre#wiki-text {
+  min-width: 480px;
+  max-width: 960px;
+
+  font-size: 1rem;
+  white-space: pre-wrap;
+}
+
+div#wiki-side, pre#wiki-text {
+  margin-top: 10px;
+  margin-left: 5%;
+  flex: 1;
 }
 
 footer {
