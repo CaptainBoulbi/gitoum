@@ -178,15 +178,15 @@ table#file-tree td {
   padding: 7px;
 }
 
-table#summary-branch, table#summary-tag, table#log {
+table#summary-branch, table#summary-tag, table#log, table#packages {
   width: 100%;
 }
 
-table#summary-branch th, table#summary-tag th {
+table#summary-branch th, table#summary-tag th, table#packages th {
   width: 10%;
 }
 
-table#summary-branch td, table#summary-tag td, table#log td {
+table#summary-branch td, table#summary-tag td, table#log td, table#packages td {
   width: 100%;
 }
 
@@ -198,6 +198,30 @@ table#log th {
 span.branch {
   border: solid 1px var(--off-color);
   padding: 1px;
+}
+
+table.total tbody tr:last-child {
+  background-color: var(--dark-color-2);
+}
+
+table.total tbody tr:last-child th {
+  color: var(--off-color);
+}
+
+div#stat-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table#author-stat, table#month-stat {
+  width: 40%;
+
+  margin-left: 5%;
+  margin-right: 5%;
+
+  margin-bottom: 1.5rem;
+
+  height: 0px;
 }
 
 footer {
