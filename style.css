@@ -6,6 +6,7 @@
 html {
   background: var(--dark-color-0);
   color: var(--light-color-0);
+  font-family: "DejaVu Sans Mono";
 }
 
 body {
@@ -130,6 +131,12 @@ pre#readme {
 
   padding: 10px;
   margin: 0px;
+
+  height: fit-content;
+  min-width: 480px;
+  max-width: 960px;
+
+  font-size: 1rem;
 }
 
 div#about-content {
@@ -139,12 +146,6 @@ div#about-content {
 
 div#about-side {
   max-width: 480px;
-}
-
-pre#readme {
-  min-width: 480px;
-  max-width: 960px;
-  font-size: 1rem;
 }
 
 div#about-side, pre#readme {
@@ -252,6 +253,14 @@ div#wiki-side, pre#wiki-text {
   margin-top: 10px;
   margin-left: 5%;
   flex: 1;
+}
+
+span.diff-min {
+  color: #e33;
+}
+
+span.diff-add {
+  color: #7f7;
 }
 
 footer {
